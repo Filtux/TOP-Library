@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <h1>My Library!</h1>
+            <button class="button-add-book">Add</button>
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <form class="book-form">
+                        <label for="title">Title</label>
+                        <input name="title" type="text" value="" placeholder="e.g. A Game of Thrones" required>
+                        <label for="author">Author</label>
+                        <input name="author" type="text" value="" placeholder="e.g. George R.R Martin" required>
+                        <label for="pages">Pages</label>
+                        <input name="pages" type="text" value="" placeholder="e.g. 999" required>
+                        <label for="readStatus">Read:</label>
+                        <select name="readStatus">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>            
+        </div>
+        <div class="library-container">
+        </div>
+    </div>
+</body>
+</html>
