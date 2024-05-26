@@ -1,15 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
     let myLibrary = [];
 
-    function Book(title, author, pages, isRead) {
-        this.title = title;
-        this.author = author;
-        this.pages = pages;
-        this.isRead = isRead;
-    }
+    class Book {
+        constructor(title, author, pages, isRead) {
+            this.title = title;
+            this.author = author;
+            this.pages = pages;
+            this.isRead = isRead;
+        }
 
-    Book.prototype.toggleRead = function() {
-        this.isRead = this.isRead === 'yes' ? 'no' : 'yes';
+        toggleRead() {
+            this.isRead = this.isRead === 'yes' ? 'no' : 'yes';
+        }
     }
 
     function addBookToLibrary(title, author, pages, isRead) {
